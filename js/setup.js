@@ -1,5 +1,9 @@
 (function($){
     $(function(){
-	$.deck('.slide');
+        $("textarea.code").snippits({
+            onFinish : function(){
+		$.deck('.slide');
+	    }
+        })
     })
 })(jQuery);

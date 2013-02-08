@@ -29,6 +29,7 @@
     <script src="codemirror/codemirror.js"></script>
     <script src="codemirror/mode/javascript/javascript.js"></script>
     <script src="codemirror/deck.codemirror.js"></script>
+    <script src="js/jquery.snippits.js"></script>
     <script src="js/setup.js"></script>
   </head>
   <body class="deck-container">
@@ -46,12 +47,7 @@
 
     <section class="slide">
       <h2>Code</h2>
-      <textarea id="example-code" name="example-code" class="code" mode="javascript" style="display: none;" runnable="true">
-        var greet = function(name){
-          return "Hello " + name;
-        }
-        console.log(greet("World"));
-      </textarea>
+      <textarea id="example-code" data-snippit="example.js" name="example-code" class="code" mode="javascript" style="display: none;" runnable="true"></textarea>
     </section>
 
     <!-- deck.navigation snippet -->
