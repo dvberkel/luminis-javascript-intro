@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="deck/extensions/scale/deck.scale.css">
     <link rel="stylesheet" href="deck/themes/style/swiss.css">
     <link rel="stylesheet" href="deck/themes/transition/horizontal-slide.css">
+    <link rel="stylesheet" href="codemirror/deck.codemirror.css">
+    <link rel="stylesheet" href="codemirror/themes/default.css">
     <script src="deck/modernizr.custom.js"></script>
     <script src="deck/jquery-1.7.2.min.js"></script>
     <script src="deck/core/deck.core.js"></script>
@@ -24,6 +26,9 @@
     <script src="deck/extensions/status/deck.status.js"></script>
     <script src="deck/extensions/navigation/deck.navigation.js"></script>
     <script src="deck/extensions/scale/deck.scale.js"></script>
+    <script src="codemirror/codemirror.js"></script>
+    <script src="codemirror/mode/javascript/javascript.js"></script>
+    <script src="codemirror/deck.codemirror.js"></script>
     <script src="js/setup.js"></script>
   </head>
   <body class="deck-container">
@@ -37,6 +42,16 @@
 
     <section class="slide">
       <h1>Here</h1>
+    </section>
+
+    <section class="slide">
+      <h2>Code</h2>
+      <textarea id="example-code" name="example-code" class="code" mode="javascript" style="display: none;" runnable="true">
+        var greet = function(name){
+          return "Hello " + name;
+        }
+        console.log(greet("World"));
+      </textarea>
     </section>
 
     <!-- deck.navigation snippet -->
